@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Page</title>
+</head>
+<body>
+    <h1>VARIABLE.HTML</h1>
+    <h2>The girl's first name was {{first_name | lower | capfirst }} and her last name was {{last_name | lower | capfirst }}.</h2>
+    <h2>{{some_list.1}}</h2>
+    <h2>{{some_dict.inside_key}}</h2>
+    <ul>
+    {% for i in some_list %}
+        <li> {{ i }} </li>
+    {# this is a comment #}
+
+    {% endfor %}
+    </ul>
+
+    <ul>
+        {% for k,v in some_dict.items %}
+            <li>{{ v }}</li>
+
+        {% endfor %}
+    </ul>
+
+
+
+</body>
+</html>
