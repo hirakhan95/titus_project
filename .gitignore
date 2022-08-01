@@ -139,4 +139,4 @@ dmypy.json
 cython_debug/
 
 db.sqlite3
-.idea
+.idea/
